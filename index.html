@@ -18,49 +18,33 @@
             <h2>學號：b06901017</h2>
         </div>
         <div id="right">
-            <ul>
-                <li id="basic">
-                    基本資料
-                    <ul>
-                       <li>綽號：鐘憲哥</li>
-                       <li>年紀：21歲</li>
-                       <li>學校：國立臺灣大學</li>
-                       <li>系所：電機工程學系</li>
-                       <li>星座：牡羊座</li>
-                       <li>血型：A型</li>
-                    </ul>
-                </li>
-                <li id="school">
-                    學歷
-                    <ol>
-                        <li>信義國小</li>
-                        <li>三興國小</li>
-                        <li>龍山國中</li>
-                        <li>建國高中</li>
-                        <li>臺灣大學</li>
-                    </ol>
-                </li>
-                <li id="prof">
-                    專長
-                    <ul>
-                        <li>judge & decide</li>
-                        <li>acquire knowledge</li>
-                        <li>coding and cooperate</li>
-                        <li>keep curiosity</li>
-                        <li>yield idea</li>
-                    </ul>
-                </li>
-                <li id="favor">
-                    興趣
-                    <ul>
-                        <li>打電動、看影片、聽音樂、看動漫、看電影、看影集</li>
-                        <li>閱讀、學習、思考、創作</li>
-                        <li>旅遊、運動、打球、爬山</li>
-                        <li>寫程式、做有點挑戰性的事</li>
-                        <li>吃、睡</li>
-                    </ul>
-                </li>
-            </ul>
+            <div id="right_head">
+                <button class="head_button">基本資料</button>
+                <button class="head_button">學經歷</button>
+                <button class="head_button">專長</button>
+                <button class="head_button">學習成果</button>
+                <button class="head_button">生活照片</button>
+            </div>
+            <div id="right_body">
+                <h1 class="image-viewer__title">學習成果</h1>
+                <div class="image-viewer__main">
+                    <botton class="image-viewer__button" onclick="previousImage()">
+                        <img src="./img/back.png" id="previous" />
+                    </botton>
+                    <div class="image-viewer__display">
+                        <img src="" id="display">
+                        <div class="image-viewer__display-source-wrapper">
+                            <span>
+                                <p id="source" style="color: whitesmoke;"></p>
+                            </span>
+                        </div>
+                    </div>
+                    <botton class="image-viewer__button" onclick="nextImage()">
+                        <img src="./img/next.png" id="next" />
+                    </botton>
+                </div>
+            </div>
         </div>
+        <script src="main.js"></script>
     </body>
 </html>
